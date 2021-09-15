@@ -1,0 +1,12 @@
+﻿@model IEnumerable<SEDC.Homework.Class02.ClientApp.DataModels.User>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1>Users</h1>
+
+@foreach(var item in ViewData.Model)
+            {
+                <li>@item.FirstName @item.LastName @item.Age</li>
+            }
